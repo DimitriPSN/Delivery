@@ -1,6 +1,6 @@
 # Delivery
 
-Projet tutoré dans le cadre de la licence Pro Développeur Web et Mobile pour le Commerce Electronique.
+Projet tutoré réalisé dans le cadre de la licence Pro Développeur Web et Mobile pour le Commerce Electronique.
 
 ### Objectifs
 
