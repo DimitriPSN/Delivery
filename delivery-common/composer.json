@@ -1,0 +1,16 @@
+{
+    "name": "grp7/delivery-common",
+    "type": "library",
+    "authors": [
+        {
+            "name": "PISANI Dimitri",
+            "email": "pisani.dimitri@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ws\\Delivery\\Common\\": "./src"
+        }
+    }
+}

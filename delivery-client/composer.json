@@ -1,0 +1,17 @@
+{
+    "name": "grp7/delivery-client",
+    "authors": [
+        {
+            "name": "PISANI Dimitri",
+            "email": "pisani.dimitri@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ws\\Delivery\\Client\\": "./src"
+        }
+    }
+}

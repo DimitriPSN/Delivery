@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Main Wrapper -->
+    <main class="wrapper">
+        <!-- Content Wrapper -->
+        <article>
+            <!-- Banner -->
+            <section class="banner mask-overlay pad-120 white-clr">
+                <div class="pad-50 visible-lg"></div>
+            </section>
+            <!-- /.Banner -->
+
+            <!-- Track Product -->
+            <section>
+                <div class="theme-container container">
+                    <div class="row">
+                        <div class="col-md-8 track-prod clrbg-before wow slideInUp">
+                            <h2 class="title-1">Ajoutez un point de position</h2>
+                            <div class="row">
+                                {{ form_start(form)}}
+                                    <div class="col-md-12">
+                                        {% if result is not empty %}
+                                            <p>{{ result.message }}</p>
+                                        {% endif %}
+                                        <div class="form-group">
+                                            {{ form_widget(form.parcelNumber,
+                                                {
+                                                    'attr':
+                                                    {
+                                                        'class': 'form-control box-shadow',
+                                                        'placeholder': 'Entrez le numéro du produit'
+                                                    }
+                                                })
+                                            }}
+                                        </div>
+                                        {{ form_errors(form.parcelNumber) }}
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            {{ form_widget(form.latitude,
+                                                {
+                                                    'attr':
+                                                    {
+                                                        'class': 'form-control box-shadow',
+                                                        'placeholder': 'Entrez la latitude'
+                                                    }
+                                                })
+                                            }}
+                                        </div>
+                                        {{ form_errors(form.latitude) }}
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            {{ form_widget(form.longitude,
+                                                {
+                                                    'attr':
+                                                    {
+                                                        'class': 'form-control box-shadow',
+                                                        'placeholder': 'Entrez la longitude'
+                                                    }
+                                                })
+                                            }}
+                                        </div>
+                                        {{ form_errors(form.longitude) }}
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            {{ form_widget(form.send,
+                                                {
+                                                    'attr':
+                                                    {
+                                                        'class': 'btn-1',
+                                                    }
+
+                                                })
+                                            }}
+                                        </div>
+                                    </div>
+                                {{ form_end(form) }}
+                            </div>
+                        </div>
+                        <div class="col-md-4 track-deco">
+                            <div class="row">
+                                <div>
+                                    <img src="{{ asset('img/car.png') }}" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.Track Product -->
+        </article>
+    </main>
+{% endblock %}
