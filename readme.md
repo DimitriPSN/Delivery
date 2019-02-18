@@ -49,3 +49,7 @@ $ php bin/console server:run
 ### Lancement
 
 L'application devrait être accessible à l'adresse http://127.0.0.1:8000/ et l'API à cette adresse http://127.0.0.1:8001/
+
+## Capture d'écran
+
+![Alt text](screenshot\home.png "Home")
