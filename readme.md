@@ -52,4 +52,4 @@ L'application devrait être accessible à l'adresse http://127.0.0.1:8000/ et l'
 
 ## Capture d'écran
 
-![Alt text](screenshot\home.png "Home")
+![Alt text](https://github.com/DimitriPSN/Delivery/blob/master/screenshot/home.png)
